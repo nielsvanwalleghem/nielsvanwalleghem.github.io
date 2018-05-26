@@ -49,5 +49,8 @@
       "type": "image/png"
     }
   ],
+  "permissions": [
+    "audioCapture"
+  ],
   "splash_pages": null
 }
