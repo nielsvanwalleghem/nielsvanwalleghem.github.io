@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitTuned</title>
+    <!-- <link rel="manifest" href="#">-->
+    <meta name="author" content="Niels Van Walleghem">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="manifest" href="manifest/manifest.json">
+    <meta name="theme-color" content="#2196f3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="webfonts/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css"/>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/screen.css"/>
+
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script src="javascripts/jquery-3.2.1.js"></script>
+
+
+</head>
+<body>
+<nav>
+    <h2>GitTuned</h2>
+    <div id="note">
+        <i class="fa fa-music"></i>
+    </div>
+</nav>
+<h1>Tune your guitar</h1>
+
+<form>
+<label for="tuneselection"></label>
+    <select id="tuneselection">
+        <option>
+            Standard
+        </option>
+        <option>
+            Coming soon
+        </option>
+    </select>
+
+</form>
+<div><a href="index.html" class="starter">Click to start tuning</a></div>
+
+
+<p hidden class="tuner-data frequency">--</p>
+
+
+<p class="tuner-data note">--</p>
+
+
+<div>
+    <i class="fa fa-circle" aria-hidden="true" id="low"></i>
+    <i class="fa fa-circle" aria-hidden="true" id="correct"></i>
+    <i class="fa fa-circle" aria-hidden="true" id="high"></i>
+</div>
+
+<table>
+    <tbody>
+
+    <tr>
+        <td hidden><strong>Waveform</strong></td>
+        <td hidden>
+            <canvas id="waveform" width="480" height="160"></canvas>
+        </td>
+    </tr>
+    <tr>
+        <td hidden><strong>Bar-Graph</strong></td>
+        <td hidden>
+            <canvas id="bargraph" width="480" height="160"></canvas>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<section>
+    <h3>notes</h3>
+    <button>E</button>
+    <button>A</button>
+    <button>D</button>
+    <button>B</button>
+    <button>e</button>
+</section>
+
+<footer>
+    <a href="record.html">Record</a>
+    <a href="index.html">Tuner</a>
+    <a href="songs.html">Learn Songs</a>
+
+
+</footer>
+<script>
+
+    window.addEventListener('load', init_tuner, false);
+
+    var tuner;
+
+    function init_tuner() {
+        tuner = new Tuner({});
+
+    }
+
+
+</script>
+<script src="javascripts/tuner.js"></script>
+<script src="javascripts/app.js"></script>
+</body>
+</html>

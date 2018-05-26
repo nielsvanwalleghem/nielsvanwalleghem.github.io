@@ -1,0 +1,122 @@
+body{
+    background-color: cornflowerblue;
+    font-family: Arial, sans-serif;
+}
+nav{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+h1{
+    text-align: center;
+    font-size: 6vh;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+h2{
+    font-size: 6vh;
+    margin-left: 20px;
+    display: inline-block;
+}
+h3{
+    display: none;
+}
+
+aside{
+    display: inline;
+    text-align: right;
+}
+p{
+    text-align: center;
+    font-size: 4vh;
+}
+
+i.fa-music{
+    font-size: 8vh;
+    margin-left: 5%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+i.fa-circle{
+    font-size: 12vh;
+
+    margin-top: 50px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+i.fa-microphone{
+    font-size: 40vh;
+    margin-top: 20px;
+
+}
+select{
+    font-size: 6vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+form{
+    text-align: center;
+}
+section{
+    text-align: center;
+    margin-top: 5%;
+}
+nav{
+    background-color: #999999;
+}
+button{
+    font-size: 8vh;
+    border: solid 2px;
+
+}
+article{
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+fieldset{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 20px;
+}
+a{
+
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding-right: 5px;
+    border-right: solid black 3px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+footer :last-child{
+    border: none;
+}
+
+/*classes*/
+
+.songb{
+
+    text-align: center;
+    font-size: 8vh;
+    margin-bottom: 10px;
+}
+.starter{
+    border: solid black 2px;
+    font-size: 2rem;
+    padding: 2px 2px 2px 2px;
+}
+
+#note{
+    float: right;
+    margin-right: 20px;
+    margin-top: -10px;
+    display: inline-block;
+
+
+}
+

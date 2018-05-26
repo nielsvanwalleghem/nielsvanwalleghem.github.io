@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recorder</title>
+    <link rel="manifest" href="manifest/manifest.json">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="webfonts/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/screen.css" />
+
+
+
+
+</head>
+
+<body>
+<nav>
+    <h2>GitTuned</h2>
+    <div id="note">
+        <i class="fa fa-music"></i>
+    </div>
+</nav>
+
+<article>
+    <h1>Record your song</h1>
+    <i class="fa fa-microphone" id="rec"></i>
+<div class="wrapper">
+    <div class="audio-wrapper">
+        <audio src="" controls class="js-audio audio"></audio>
+        <div class="toolbar">
+            <button onclick="recorderOn()" class="js-start button button--start">Start</button>
+            <button onclick="recorderOff()" class="js-stop button button--stop">Stop</button>
+        </div>
+
+    </div>
+
+</div>
+</article>
+<footer>
+    <a href="record.html">Record</a>
+    <a href="index.html">Tuner</a>
+    <a href="songs.html">Learn Songs</a>
+
+
+</footer>
+<script src="javascripts/recorder.js" ></script>
+<script src="javascripts/app.js"></script>
+</body>
+</html>
